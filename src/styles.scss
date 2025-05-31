@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.tree {
+  padding: 40px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(150, 189, 190, 0.585);
+    border-radius: 8px;
+    border: 1px solid rgb(60, 77, 78);
+    padding: 8px;
+    gap: 12px;
+    max-width: 100%;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div:not(:last-child) {
+      padding-right: 20px;
+      border-right: 1px solid rgb(82, 90, 95);
+    }
+
+    &__arrow {
+      cursor: pointer;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 4px;
+      margin-left: 12px;
+    }
+
+    &__btn {
+      padding: 6px;
+      font-size: 12px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__btn:active {
+      background-color: rgb(60, 77, 78);
+    }
+  }
+}

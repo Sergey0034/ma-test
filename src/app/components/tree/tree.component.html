@@ -1,0 +1,14 @@
+@if (tree) {
+  <div class="tree">
+    <h1 class="tree__title">Дерево {{treeIndex}}:</h1>
+    <app-node
+      [node]="tree"
+      [indexOffsetNode]="indexOffsetNode"
+      [marginLeftValueDefault]="marginLeftValueDefault"
+      [treeIndex]="treeIndex"
+      [isExpanded]="isExpanded()"
+      [handlerClickNodeBtn]="handlerClickNodeBtn"
+      [nameButton]="nameButton()"
+    ></app-node>
+  </div>
+}
